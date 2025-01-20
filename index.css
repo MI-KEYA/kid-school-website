@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 .display-flex{
     display: flex;
@@ -9,12 +11,19 @@ body{
     font-family: Quicksand; 
 }
 /* STYLING NAVBAR */
+.navbar{
+     /* max-width: 1200px; */
+    /* margin-left: 140px;
+    margin-right: 140px;  */
+}
 .nav-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 20px;
+    max-width: 1200px;
     margin-left: 140px;
-    margin-right: 140px;
+    margin-right: 200px;
 }
 .nav-links{
     display: flex;
@@ -67,19 +76,27 @@ body{
     font-weight: 600;
     font-size: 1.25rem;
     line-height: 1.875rem;
-    /* margin-right: 140px; */
+}
+.nav-hr{
+    width: 100%;
+    border-top: 1px solid orange;
+    visibility: hidden;
+    margin-top: 20px;
+}
+.menu-icon{
+    display: none;
 }
 /* STYLING BANNER */
 .banner{
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    max-width: 1150px;
+    max-width: 1200px;
     margin-left: 140px;
     margin-right: 140px;
 }
 .banner-content{
-    width: 640px;
+    max-width: 640px;
+    margin-right: 50px;
 
 }
 .banner-title{
@@ -108,4 +125,54 @@ body{
     font-size: 1.25rem;
     line-height: 1.875rem;
     margin-top: 24px;
+}
+.hero-kid{
+    width: 100%;
+}
+
+/* responsive for small device like mobile phone */
+@media screen and (max-width: 576px) {
+    .nav-links, .nav-btn, .logo-name{
+        display: none;
+    }
+    .navbar{
+        justify-items: center;
+    }
+    .nav-container{
+        /* margin-left: -100px; */
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px 20px;
+        
+    }
+    .nav-logo{
+
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .hero-kid{
+        margin-top: 28px;
+        width: 336px;
+    }
+    .banner-content{
+        width: 357px;
+        justify-items: center;
+        text-align: center;
+    }
+    .banner-title{
+        font-size: 2.25rem;
+    }
+    .nav-hr{
+        width: 426px;
+        /* margin-left: -150px;  */
+        visibility: visible;
+    }
+    .menu-icon{
+        display: block;
+        font-size: 30px;
+         margin-right: 60px;
+        text-align: center;
+    }
 }
