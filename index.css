@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -11,11 +12,11 @@ body{
     font-family: Quicksand; 
 }
 /* STYLING NAVBAR */
-.navbar{
-     /* max-width: 1200px; */
-    /* margin-left: 140px;
-    margin-right: 140px;  */
-}
+/* .navbar{
+      max-width: 1200px; 
+     margin-left: 140px;
+    margin-right: 140px;  
+} */
 .nav-container{
     display: flex;
     justify-content: space-between;
@@ -130,6 +131,99 @@ body{
     width: 100%;
 }
 
+/* CURRICULUM SECTION STYLING */
+
+.standard-curriculum{
+    background-image: url(assets/bg.png);
+}
+.curriculum-container{
+    max-width: 1200px;
+    margin-left: 140px;
+    margin-right: 140px; 
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    /* justify-content: space-around; */
+}
+.curriculum-title{
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+.card{
+    background: linear-gradient(to bottom, #DEF5FF, white, white);
+    width: 367px;
+    border-radius: 18px;
+    border: 1px solid #DEF5FF;
+    /* margin-left: 140px; */
+}
+.elementary-gradient{
+    background: linear-gradient(to bottom, #FFF4DC,white, white);
+    border: 1px solid #FFF4DC;
+}
+.middle-gradient{
+    background: linear-gradient(to bottom, #F2E8FF, white, white);
+    border: 1px solid #F2E8FF;
+}
+.card-logo{
+    margin-left: 115px;
+    margin-top: 52px;
+    
+}
+.card-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-top: 30px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+.card-description{
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    color: #808080;
+    text-align: center;
+    margin: 30px 40px;
+}
+.card-button{
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    color: #64C8FF;
+}
+.elementary-btn{
+    color: #F0AA00;
+}
+.middle-btn{
+    color: #8700FF;
+}
+.arrow-icon{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    
+}
+.left, .right{
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #F0AA00;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    
+}
+
 /* responsive for small device like mobile phone */
 @media screen and (max-width: 576px) {
     .nav-links, .nav-btn, .logo-name{
@@ -147,7 +241,7 @@ body{
         
     }
     .nav-logo{
-
+        margin-left: 20px;
     }
     .banner{
         flex-direction: column-reverse;
@@ -172,7 +266,15 @@ body{
     .menu-icon{
         display: block;
         font-size: 30px;
-         margin-right: 60px;
+         /* margin-right: 10px; */
         text-align: center;
+    }
+    .curriculum-container{
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 30px;
+    }
+    .arrow-icon{
+        display: none;
     }
 }
