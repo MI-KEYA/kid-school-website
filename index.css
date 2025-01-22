@@ -12,11 +12,11 @@ body{
     font-family: Quicksand; 
 }
 /* STYLING NAVBAR */
-/* .navbar{
-      max-width: 1200px; 
-     margin-left: 140px;
-    margin-right: 140px;  
-} */
+marquee{
+
+    margin-top: 10px;
+    color: #01ACFD;
+}
 .nav-container{
     display: flex;
     justify-content: space-between;
@@ -245,7 +245,8 @@ body{
     grid-template-rows: auto;
     gap: 25px;
     margin: 35px;
-    padding: 140px;
+    padding: 10px 80px 140px 140px;
+    
 }
 .img-container img{
     width: 100%;
@@ -303,6 +304,79 @@ body{
     color: #666666;
     margin-left: 38px;
     margin-bottom: 35px;
+}
+.view-btn{
+    display: flex;
+    justify-content: center;
+    
+}
+.view-all{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 60px;
+    font-family: Quicksand;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+/* FOOTER STYLING */
+.footer-container{
+    background-color: #01ACFD;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.edu-content{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.edu-title{
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: white;
+    line-height: 2.5rem;
+    margin-left: 10px;
+}
+.edu-description{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    margin-top: 35px;
+    max-width: 399px;
+
+}
+.footer-logo{
+    background-color: white;
+}
+.foot-items{
+    list-style: none;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    
+}
+.about-title{
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    
+}
+.social-title{
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    color: white;
+    margin-bottom: 32px;
 }
 
 /* responsive for small device like mobile phone */
@@ -378,5 +452,10 @@ body{
         margin-left: 15px;
         margin-right: 10px;
     }
-    
+    .footer-container{
+        display: block;
+    }
+    .edu, .about-school{
+        margin-bottom: 32px;
+    }
 }
