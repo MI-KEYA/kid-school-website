@@ -224,6 +224,87 @@ body{
     
 }
 
+/* STORY SECTION STYLING */
+
+.our-stories{
+    background: url(assets/bg.png), linear-gradient(to bottom, white,  rgba(254, 161, 1, 0.305));  
+}
+.story-title{
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+.img-container{   
+    /* max-width: 1200px;
+    padding-left: 140px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 25px;
+    margin: 35px;
+    padding: 140px;
+}
+.img-container img{
+    width: 100%;
+    /* object-fit: cover; */
+    border-radius: 16px  16px 0 0;
+}
+.img-container div{
+    border-radius: 16px;
+    background-color: white;
+}
+.img1{
+    grid-column: span 2;
+    grid-row: span 2;
+    object-fit: cover;
+}
+
+.story-card-title, .story-card-title1{
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    margin-left: 30px;
+    margin-bottom: 30px;
+
+}
+.story-card-title1{
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+    margin-left: 38px;
+}
+.story-btn{
+    position: relative;
+    top: -30px;
+    left: 30px;
+    color: white;
+    background-color: #3CD8E8;
+    border: none;
+    border-radius: 48px;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 14px 19px;
+}
+.olive-color{
+    background-color: #95B226;
+}
+.purple-color{
+    background-color: #5D58F0;
+}
+.story-card-description{
+    width: 440px;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 1.8rem;
+    color: #666666;
+    margin-left: 38px;
+    margin-bottom: 35px;
+}
+
 /* responsive for small device like mobile phone */
 @media screen and (max-width: 576px) {
     .nav-links, .nav-btn, .logo-name{
@@ -233,7 +314,7 @@ body{
         justify-items: center;
     }
     .nav-container{
-        /* margin-left: -100px; */
+    
         justify-content: space-between;
         align-items: center;
         width: 100%;
@@ -277,4 +358,25 @@ body{
     .arrow-icon{
         display: none;
     }
+    .img-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 11px;
+        margin: 0 auto;
+        padding: 20px;
+        object-fit: cover;
+    }
+    .img1{
+        display: none;  
+        
+    }
+    .story-btn{
+        font-size: 0.85rem;
+        left: 20px;
+    }
+    .story-card-title{
+        margin-left: 15px;
+        margin-right: 10px;
+    }
+    
 }
