@@ -358,11 +358,16 @@ marquee{
 }
 .foot-items{
     list-style: none;
+    margin-bottom: 20px;
+    
+    
+}
+.about-school a{
+    text-decoration: none;
     color: white;
     margin-bottom: 20px;
     font-size: 1.25rem;
     font-weight: 500;
-    
 }
 .about-title{
     margin-bottom: 24px;
